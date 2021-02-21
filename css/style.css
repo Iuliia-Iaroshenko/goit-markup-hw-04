@@ -252,15 +252,22 @@ footer {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.advantages-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .advantages-item:last-child {
   margin-right: 0px;
 }
 
 .advantages-card {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--light-grey);
 }
@@ -374,20 +381,19 @@ footer {
 }
 
 .social-links-list {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 206px;
-  height: 44px;
 }
 
 .social-links-item a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--icons);
+
   width: 44px;
   height: 44px;
+  color: var(--icons);
 }
 
 .social-links-item a:hover,
@@ -467,6 +473,11 @@ footer {
 
 /* Footer */
 
+.container.adr {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   padding: 60px 0;
 }
@@ -510,9 +521,9 @@ footer {
 
 /* Присоединяйтесь */
 
-.container.adr {
-  display: flex;
-  align-items: baseline;
+.subscription {
+  width: 206px;
+  height: 80px;
 }
 
 .sub-title {
@@ -526,11 +537,9 @@ footer {
 }
 
 .sub-links-list {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 206px;
-  height: 44px;
 }
 
 .sub-links-item a {
